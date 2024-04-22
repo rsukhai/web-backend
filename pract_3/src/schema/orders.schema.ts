@@ -18,6 +18,8 @@ export class Orders {
   @Prop({ type: String, required: true })
   type: string;
 
+  @Prop({ type: String, required: true })
+  distance: string;
 }
 
 export const OrdersSchema = SchemaFactory.createForClass(Orders);

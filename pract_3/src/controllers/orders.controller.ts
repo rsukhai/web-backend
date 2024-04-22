@@ -14,7 +14,6 @@ export class OrdersController {
   ) {
     try {
       const { user } = req;
-
       const order = await this.orderService.createOrder({
         ...body,
         login: user.login,
